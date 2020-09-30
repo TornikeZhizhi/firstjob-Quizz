@@ -14,7 +14,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'Conv_dejavu-sans';
+	src: url('../fonts/dejavu-sans.eot');
+	src: local('☺'), url('../fonts/dejavu-sans.woff') format('woff'), url('../fonts/dejavu-sans.ttf') format('truetype'), url('../fonts/dejavu-sans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 * {
 	font-family: 'Conv_bpg-web-001-caps-webfont';
 }
@@ -191,6 +197,8 @@
 	border: none;
 	outline: none;
 	font-size: 16px;
+	font-family: 'Conv_dejavu-sans';
+	cursor: pointer;
 
 }
 
@@ -203,9 +211,64 @@ footer {
 footer a, footer span {
 	color: #707070;
 	font-size: 14px;
+		font-family: 'Conv_dejavu-sans';
 }
 
 footer img {
 	width: 80px;
 	padding-left: 10px;
 }
+
+body {
+	background-image: url("../images/line.png");
+background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 992px) {
+ .header {
+
+    padding: 10px 8px 8px 15px;
+}
+
+.logo img {
+    width: 119px;
+}
+.test_wrapper {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.title * {
+    font-size: 24px;
+}
+
+.question h3 {
+    font-size: 20px;
+    color: #545454;
+}
+
+.question_box .question_wrapper {
+    padding: 8px 5px;
+}
+
+.question {
+    background-color: #E8F1FF;
+    padding: 14px 0 7px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.question_box label {
+    flex: 0 0 49%;
+    max-width: 49%;
+    height: 135px;
+}
+
+.form_button {
+    margin: 20px 0 0px;
+}
+}
+
