@@ -219,13 +219,13 @@ footer img {
 	padding-left: 10px;
 }
 
-body {
+/*body {
 	background-image: url("../images/line.png");
 background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
 }
-
+*/
 @media only screen and (max-width: 992px) {
  .header {
 
@@ -271,4 +271,250 @@ background-repeat: no-repeat;
     margin: 20px 0 0px;
 }
 }
+
+
+
+body{
+	background-image: url(../images/line1.png);
+	background-size: 212%;
+    width: 100%;
+    background-position-x: 55%;
+	background-position-y: -250px;
+	background-repeat: no-repeat;
+}
+
+.form-container{
+    max-width: 540px;
+    background: white;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    margin: 45px auto;
+    box-shadow: 0 0 5px #EFEFEF;
+
+}
+.answer_info {
+	font-family: 'Conv_dejavu-sans';
+	font-size: 22px;
+	color: #66BB6A;
+
+}
+.r_sum {
+	margin: 20px 0;
+}
+.common_container {
+	 max-width: 770px;
+    background: white;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    margin: 45px auto;
+    box-shadow: 0 0 5px #EFEFEF;
+    padding-bottom: 50px;
+}
+
+.answer_text {
+    max-width: 550px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+.answer_text * {
+	color: #707070;
+	font-size: 16px;
+	font-family: 'Conv_dejavu-sans';
+}
+
+.form-title{
+	font-size:32px;
+	font-family: 'Conv_dejavu-sans';
+	text-align: center;
+	color:#707070;
+	padding-top: 35px;
+}
+.wrapper{
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	padding-bottom:20px;
+}
+
+.material-textfield{
+	display: inline-block;
+    height: 70px;
+    padding-top: 15px;
+	width: 70%;
+	margin: 13px 10px;
+   position: relative;
+}
+
+.input-span{
+	position: absolute;
+	left: 5px;
+	background: white;
+    z-index: 99;
+	font-size: 12px;
+	font-family: 'Conv_dejavu-sans';
+	color: #FF3333;
+	z-index: 99;
+	margin-top: 3px;
+
+}
+
+.form-container input{
+	background: none;
+	border: none;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+	height: 60px;
+	padding: 0 20px;
+    color: #707070;
+    font-size: 16px;
+    font-family: 'Conv_dejavu-sans';
+}
+
+.form-container input:invalid{
+	box-shadow: none;
+}
+
+.form-container input:focus{
+	outline: none;
+}
+
+.form-container label{
+	  display: inline-block;
+        font-size: 0;
+        pointer-events: none;
+        position: relative;
+        text-transform: uppercase;
+		width: 100%;
+		font-family: 'Conv_dejavu-sans';
+}
+
+.form-container label::before{
+	content: attr(data-content);
+	position: relative;
+	transition: all 0.2s ease;
+	will-change: font-size, top;
+	
+}
+
+.form-container label::after{
+	bottom: 0.9rem;
+	content: '';
+	height: 0.3rem;
+	left: 50%;
+	position: absolute;
+	transition: all 0.2s ease;
+	width: 0;
+	will-change: width, left;
+}
+
+.form-container label::before, .form-container input[required]:focus ~ label::before{
+	font-size: 0.75rem;
+    top: -72px;
+    background: white;
+	padding: 10px;
+	color:#707070;
+	left: 10px;
+}
+
+.form-container input:focus ~ label::after{
+	left: 0%;
+	width: 100%
+}
+
+.form-container input:invalid ~ label::before{
+    color: #707070;
+    font-family: 'Conv_dejavu-sans';
+    font-size: 16px;
+    top: -42px;
+
+}
+
+.form-container input::-webkit-outer-spin-button,
+.form-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-button{
+	width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.form-container button{
+	margin: 30px 0 5px;
+    width: 70%;
+    border-radius: 10px;
+    height: 60px;
+    border: unset;
+    color: white;
+    font-size: 16px;
+	background: #536DFE;
+	opacity: .8;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.form-container button:focus {
+    outline: none;
+}
+
+.form-container button:hover{
+	opacity: unset;
+}
+
+.hide{
+	display: none;
+}
+
+.button-span{
+
+	background: white;
+	font-size: 12px;
+	font-family: 'Conv_dejavu-sans';
+	color: #FF3333;
+	margin-top: 3px;
+}
+
+@media only screen and (max-width: 992px){
+
+
+	.common_container {
+    margin: 20px auto 0;
+    padding-bottom: 12px;
+}
+
+	body{
+		background-image: unset;
+	}
+
+	.form-container{
+		width:90%;
+	}
+
+	.material-textfield{
+		width:90%;
+	}
+
+	.form-container button{
+		width:90%;
+	}
+
+}
+
+
+
+
+
+
+
+      
+
+
 
