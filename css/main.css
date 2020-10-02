@@ -92,7 +92,7 @@
 	overflow: hidden;
 	border: 1px solid #E8F1FF;
 	margin-top: 20px;
-
+	background-color: #fff;
 	
 }
 
@@ -281,6 +281,7 @@ body{
     background-position-x: 55%;
 	background-position-y: -250px;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .form-container{
